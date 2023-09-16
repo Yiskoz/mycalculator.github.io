@@ -1,0 +1,89 @@
+@use '../global/typography' as t;
+@use '../global/colors' as c;
+
+
+.calculator-app {
+    display: flex;
+    margin: 5rem auto 0 auto;
+    width: 85%;
+    .calculator {
+        background: linear-gradient(270deg, lighten(c.$regular-blue, 55%), lighten(c.$regular-blue, 60%));
+        box-shadow: .3rem .5rem 1rem rgba(0, 0, 0, 0.2);
+        padding: 3rem;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 40rem;
+        margin: 0 auto;    
+        .calculator_screen {
+            grid-column: span 2;
+            display: flex;
+            justify-content: center;
+            .screen {
+                display: flex;
+                border-radius: 1rem;
+                border: 1px solid c.$dark-blue;
+                width: 100%;
+                height: 6rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                font-family: t.$font-buttons;
+                font-size: clamp(2rem, 5vw, 4rem);
+                margin-bottom: 3rem;
+                &::selection {
+                    background-color: c.$regular-blue;
+                    color: c.$white;
+                }
+            }
+        }
+
+        .button--sum {
+            grid-area: sum;
+            align-self: self-start;
+        }
+        .button--min {
+            grid-area: min;
+            align-self: self-start;
+        }
+        .button--mul {
+            grid-area: mul;
+            align-self: self-start;
+        }
+        .button--div {
+            grid-area: div;
+            align-self: self-start;
+        }
+        .button--clear {
+            grid-area: clear;
+            margin-bottom: 0;
+
+        }
+        .button--result {
+            grid-area: result;
+            margin-bottom: 0;
+        }
+
+        .calculator_numbers {
+            display: grid;
+            grid-template-columns: repeat(3, min-content);
+            grid-template-rows: min-content;
+            place-items: center;
+            column-gap: 1rem;
+        }
+        .calculator_operators {
+            justify-content: right;
+            display: grid;
+            grid-template-columns: repeat(2, min-content);
+            grid-template-rows: min-content;
+            place-items: center;
+            grid-template-areas: 
+            "sum min"
+            "mul div"
+            ". ."
+            "clear result"
+            ;
+            column-gap: 1rem;
+        }
+    }
+}
+

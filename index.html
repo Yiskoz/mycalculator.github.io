@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="build/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bokor&family=Montserrat:wght@300;400&family=Open+Sans:wght@300;400;700&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <title>Calculator</title>
+</head>
+    <body>
+
+        <div class="info">
+            <h1 class="title">&lt;My&gt;Calculator</h1>
+            <p class="description">A little project done with <b>HTML</b>, <b>JS</b> & <b>SASS</b></p>
+            <p class="description description--alt">- Created by Oleksiy Kuleba -</p>
+        </div>
+
+        <div class="calculator-app">
+            <div class="calculator">
+
+                <div class="calculator_screen">
+                    <input class="screen" type="text">
+                </div>
+
+                <div class="calculator_numbers">
+                    <button class="button" value="1">1</button>
+                    <button class="button" value="2">2</button>
+                    <button class="button" value="3">3</button>
+                    <button class="button" value="4">4</button>
+                    <button class="button" value="5">5</button>
+                    <button class="button" value="6">6</button>
+                    <button class="button" value="7">7</button>
+                    <button class="button" value="8">8</button>
+                    <button class="button" value="9">9</button>
+                    <button class="button" value="CA">CA</button>
+                    <button class="button" value="0">0</button>
+                    <button class="button" value=".">.</button>
+                    
+                </div>
+
+                <div class="calculator_operators">
+                    <button class="button button--sum" value="+">+</button>
+                    <button class="button button--min" value="-">-</button>
+                    <button class="button button--mul" value="*">*</button>
+                    <button class="button button--div" value="/">/</button>
+
+                    <button class="button button--clear" value="C">C</button>
+                    <button class="button button--result" value="=">=</button>
+                </div>
+
+            </div>
+        </div>
+
+    <div class="social">
+        <p class="description">Visit the repository on GitHub:</p>
+        <a href="https://github.com/Yiskoz/mycalculator.github.io.git" target="_blank">
+            <img class="img" draggable="false" src="build/img/github-mark.png" alt="github">
+        </a>
+    </div>
+
+    <div id="operationsList"></div>
+
+    <script src="build/js/app.js"></script>
+    </body>
+</html>
