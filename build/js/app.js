@@ -53,7 +53,7 @@
         
         if($operationsList.children.length == 0) { 
             $operationsList.appendChild($lastOperations); //ADDS A TITLE IF CONDITION IS MET
-        } else if($operationsList.children.length > 4) {
+        } else if($operationsList.children.length > 5) {
             $operationsList.children[1].remove(); //REMOVES THE LAST OPERATION AND KEEP MAX 5 ITEMS IF THE CONDITION IS MET
         }
 
