@@ -1,0 +1,14 @@
+@use '../global/typography' as t;
+@use '../global/colors' as c;
+
+.operations {
+    margin-top: 3rem;
+}
+
+.operation {
+    color: c.$dark-blue;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    line-height: 1.3;
+    text-align: center;
+    font-family: t.$font-buttons;
+}

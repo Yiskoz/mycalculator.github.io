@@ -323,20 +323,14 @@ template {
   line-height: 1;
   text-align: center;
   font-family: "Roboto Mono", monospace, "Bokor", cursive, "Montserrat", sans-serif, "Open Sans", sans-serif;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .description--alt {
   font-size: clamp(1rem, 5vw, 2rem);
 }
 .description--op {
   text-decoration: underline;
-}
-
-.operation {
-  color: #142d4c;
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
-  line-height: 1.3;
-  text-align: center;
-  font-family: "Roboto Mono", monospace, "Bokor", cursive, "Montserrat", sans-serif, "Open Sans", sans-serif;
 }
 
 .calculator_numbers .button, .calculator_operators .button {
@@ -457,6 +451,22 @@ template {
   display: flex;
   margin: 0 auto;
   cursor: pointer;
+}
+
+.social {
+  margin-top: 4rem;
+}
+
+.operations {
+  margin-top: 3rem;
+}
+
+.operation {
+  color: #142d4c;
+  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  line-height: 1.3;
+  text-align: center;
+  font-family: "Roboto Mono", monospace, "Bokor", cursive, "Montserrat", sans-serif, "Open Sans", sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map */
